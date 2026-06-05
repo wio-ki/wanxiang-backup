@@ -1,0 +1,75 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.17.4
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu Jun  4 19:36:26 2026"
+  rime_version: 1.13.1
+patch:
+  # 微信输入法风格配色方案
+  "preset_color_schemes/wechat-keyboard":
+    # 配色方案名称
+    name: "wechat-keyboard"
+    # 配色作者
+    author: me
+
+    # 编码文字颜色
+    text_color: 0x424242
+    # 候选窗口背景色
+    back_color: 0xFFFFFF
+    # 候选窗口边框颜色
+    border_color: 0xDDDDDD
+    # 候选序号颜色
+    label_color: 0x828282
+    # 普通候选词颜色
+    candidate_text_color: 0x525252
+    # 候选词注释颜色
+    comment_text_color: 0x424242
+    # 高亮编码背景色
+    hilited_back_color: 0xFFFFFF
+    # 当前选中候选词背景色
+    hilited_candidate_back_color: 0x75B100
+    # 当前选中候选词文字颜色
+    hilited_candidate_text_color: 0xFFFFFF
+    # 当前选中候选词注释颜色
+    hilited_comment_text_color: 0xFFFFFF
+    # 当前选中候选序号颜色
+    hilited_label_color: 0xFFFFFF
+    # 高亮编码文字颜色
+    hilited_text_color: 0x424242
+
+  # 小狼毫候选窗口样式
+  style:
+    # 使用上面定义的微信风格配色
+    color_scheme: "wechat-keyboard"
+    # 预编辑显示方式，composition 表示显示输入编码
+    preedit_type: composition
+    # 候选序号格式，%s 表示只显示数字
+    label_format: "%s"
+    # 候选词字体字号
+    font_point: 22
+    # 候选序号字体字号
+    label_font_point: 22
+    # 候选注释字体字号
+    comment_font_point: 22
+    # true横向候选，false竖向候选
+    horizontal: false
+    # true内嵌编码，false编码显示在候选窗
+    inline_preedit: false
+    # 候选窗口布局参数
+    layout:
+      # 候选内容对齐方式
+      align_type: center
+      # 候选窗口边框粗细
+      border: 1
+      # 候选词之间的间距
+      candidate_spacing: 5
+      # 候选窗口圆角
+      corner_radius: 6
+      # 当前选中候选词的内边距
+      hilite_padding: 5
+      # 当前选中候选词与其他内容的间距
+      hilite_spacing: 5
+      # 候选窗口内容边距
+      margin: 5
+      # 高亮区域圆角
+      round_corner: 6
